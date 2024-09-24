@@ -6,17 +6,17 @@ The published benchmark set contains 1060 items spread over 19 categories that a
 
 |               **method**               |                                **category**                                |  **sum** |
 |:--------------------------------------:|:--------------------------------------------------------------------------:|:--------:|
-| Sentence grammatically check (yes/no)* | Simple bad/good sentences                                                         | 40       |
-| Sentence grammatically check (yes/no)* | Attributive agreement                                                      | 88       |
-| Sentence grammatically check (yes/no)* | Predicate agreement                                                        | 28       |
-| Sentence grammatically check (yes/no)* | Word order                                                                 | 28       |
-| Sentence grammatically check (yes/no)* | Verb agreement                                                             | 28       |
-| Sentence grammatically check (yes/no)* | Subject case                                                               | 28       |
-| Sentence grammatically check (yes/no)* | Island effect sentences                                                    | 80       |
-| Sentence grammatically check (yes/no)* | wh-movement                                                                | 20       |
-| Sentence grammatically check (yes/no)* | Topicalization                                                             | 32       |
-| Sentence grammatically check (yes/no)* | Gapping                                                                    | 120      |
-| Sentence grammatically check (yes/no)* | Reflexivization                                                            | 40       |
+| Sentence grammaticality check (yes/no)* | Simple bad/good sentences                                                         | 40       |
+| Sentence grammaticality check (yes/no)* | Attributive agreement                                                      | 88       |
+| Sentence grammaticality check (yes/no)* | Predicate agreement                                                        | 28       |
+| Sentence grammaticality check (yes/no)* | Word order                                                                 | 28       |
+| Sentence grammaticality check (yes/no)* | Verb agreement                                                             | 28       |
+| Sentence grammaticality check (yes/no)* | Subject case                                                               | 28       |
+| Sentence grammaticality check (yes/no)* | Island effect sentences                                                    | 80       |
+| Sentence grammaticality check (yes/no)* | wh-movement                                                                | 20       |
+| Sentence grammaticality check (yes/no)* | Topicalization                                                             | 32       |
+| Sentence grammaticality check (yes/no)* | Gapping                                                                    | 120      |
+| Sentence grammaticality check (yes/no)* | Reflexivization                                                            | 40       |
 | Word well-formedness check (yes/no) *  | Word formation in several versions                                         | 280      |
 | Fill in the blank                      | Anaphoric reference                                                        | 20       |
 | Fill in the blank                      | Coreference resolution with nouns and proper nouns                         | 44       |
@@ -31,7 +31,7 @@ All of the items in the benchmark were created manually and for the top two meth
 
 ## Translation tasks
 
-Along with the main benchmark file, `translation_tasks.jsonl` contains both Icelandic and English sentences that should be translated to the other language. For the translation from Icelandic to English, we use garden path sentences, which can be used to check whether the target output has successfully parsed the sentence or not. For translation from English to Icelandic, we include sentences that test 1) gender agreement in the target output and 2) anaphoric references in the target output. These tasks are not meant as machine translation test sets but can serve as an indicator of a model's NLU performance and grammatical capabilities in producing Icelandic text. The output needs to be manually examined, however, as we do not include scripts for automatic evaluation, and these tasks are therefore kept separate from the tasks in `ice_benchmark_set.jsonl`.
+Along with the main benchmark file, `translation_tasks.jsonl` contains both Icelandic and English sentences that should be translated to the other language. For the translation from Icelandic to English, we use [garden path sentences](https://en.wikipedia.org/wiki/Garden-path_sentence), which can be used to check whether the target output has successfully parsed the sentence or not. For translation from English to Icelandic, we include sentences that test 1) gender agreement in the target output and 2) anaphoric references in the target output. These tasks are not meant as machine translation test sets but can serve as an indicator of a model's NLU performance and grammatical capabilities in producing Icelandic text. The output needs to be manually examined, however, as we do not include scripts for automatic evaluation, and these tasks are therefore kept separate from the tasks in `ice_benchmark_set.jsonl`.
 
 ## Data format
 The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-Bench harness](https://github.com/google/BIG-bench) and one for [OPENAI-Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. The custom type has the following elements:
