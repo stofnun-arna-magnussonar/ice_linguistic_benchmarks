@@ -1,1 +1,49 @@
-# ice_linguistic_benchmarks
+# Icelandic Linguistic Benchmark for LLMs
+
+This repo contains a benchmarking data set to evaluate LLMs’ grammatical knowledge and linguistic ability for Icelandic.
+
+The published benchmark set contains 1060 items spread over 19 categories that are tested with 5 methods, cf. the table below:
+
+|               **method**               |                                **category**                                |  **sum** |
+|:--------------------------------------:|:--------------------------------------------------------------------------:|:--------:|
+| Sentence grammatically check (yes/no)* | Simple bad/good sentences                                                         | 40       |
+| Sentence grammatically check (yes/no)* | Attributive agreement                                                      | 88       |
+| Sentence grammatically check (yes/no)* | Predicate agreement                                                        | 28       |
+| Sentence grammatically check (yes/no)* | Word order                                                                 | 28       |
+| Sentence grammatically check (yes/no)* | Verb agreement                                                             | 28       |
+| Sentence grammatically check (yes/no)* | Subject case                                                               | 28       |
+| Sentence grammatically check (yes/no)* | Island effect sentences                                                    | 80       |
+| Sentence grammatically check (yes/no)* | wh-movement                                                                | 20       |
+| Sentence grammatically check (yes/no)* | Topicalization                                                             | 32       |
+| Sentence grammatically check (yes/no)* | Gapping                                                                    | 120      |
+| Sentence grammatically check (yes/no)* | Reflexivization                                                            | 40       |
+| Word well-formedness check (yes/no) *  | Word formation in several versions                                         | 280      |
+| Fill in the blank                      | Anaphoric reference                                                        | 20       |
+| Fill in the blank                      | Coreference resolution with nouns and proper nouns                         | 44       |
+| Fill in the blank                      | Wug test (past tense of wug verbs)                                         | 20       |
+| Fragment answering                     | Fragment answering                                                         | 40       |
+| Question answering                     | Coreference resolution with nouns and proper nouns                         | 44       |
+| Question answering                     | Attributive agreement (choose between three options)                       | 30       |
+| Question answering                     | Word sense disambiguation (yes/no) with inverse order of sentences as well | 150      |
+|                                        |                                                                            | **1160** |
+
+All of the items in the benchmark were created manually and for the top two method types, marked with an asterisk, we doubled the number of items to ask the inverse question as well: i.e. is this sentence grammatically correct/incorrect etc.
+
+## Translation tasks
+
+Along with the main benchmark file, `translation_tasks.jsonl` contains both Icelandic and English sentences that should be translated to the other language. For the translation from Icelandic to English, we use garden path sentences, which can be used to check whether the target output has successfully parsed the sentence or not. For translation from English to Icelandic, we include sentences that test 1) gender agreement in the target output and 2) anaphoric references in the target output. These tasks are not meant as machine translation test sets but can serve as an indicator of a model's NLU performance and grammatical capabilities in producing Icelandic text. The output needs to be manually examined, however, as we do not include scripts for automatic evaluation, and these tasks are therefore kept separate from the tasks in `ice_benchmark_set.jsonl`.
+
+## Data format
+The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-Bench harness](https://github.com/google/BIG-bench) and one for [OPENAI-Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. The custom type has the following elements:
+
+- “id”: id of the sentence, word etc. Contains a keyword for each category, e.g. islands_1a.
+- “input”: the sentence, word etc. embedded in a prompt with instructions for the task at hand.
+- “answer”: the answer.
+
+The BIG-bench format has the following elements:
+- "input": the sentence, word etc. embedded in a prompt with instructions for the task at hand.
+- "target": the answer
+
+The OpenAI-evals format has the following elements:
+- "input": a list with a single dict for the question the question (we omit the system prompt). 
+- "ideal": the answer
