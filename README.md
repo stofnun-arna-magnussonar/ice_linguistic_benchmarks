@@ -38,7 +38,7 @@ For translation from English to Icelandic, we include sentences that test 1) gen
 These tasks are not meant as machine translation test sets but can serve as an indicator of a model's NLU performance and grammatical capabilities in producing Icelandic text. The output needs to be manually examined, however, as we do not include scripts for automatic evaluation, and these tasks are therefore kept separate from the tasks in `ice_benchmark_set.jsonl`.
 
 ## Data format
-The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-nench harness](https://github.com/google/BIG-bench) and one for [OpenAI Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. The custom type has the following elements:
+The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-bench harness](https://github.com/google/BIG-bench) and one for [OpenAI Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. The custom type has the following elements:
 
 - "id": id of the sentence, word etc. Contains a keyword for each category, e.g. `islands_1a`.
 - "input": the sentence, word etc. embedded in a prompt with instructions for the task at hand.
