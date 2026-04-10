@@ -1,0 +1,68 @@
+{"pairID":1,"sentence_good":"Jón hefur aldrei lesið neitt.","sentence_bad":"Jón hefur lesið aldrei neitt.","category":"word_order_general"}
+{"pairID":2,"sentence_good":"Með hvaða verkfæri er hægt að opna þetta?","sentence_bad":"Hvaða með verkfæri er hægt að opna þetta?","category":"word_order_general"}
+{"pairID":3,"sentence_good":"Hefði ekki mátt bjóða gestunum meira kaffi?","sentence_bad":"Hefði ekki mátt gestunum bjóða meira kaffi?","category":"word_order_general"}
+{"pairID":4,"sentence_good":"Þau gáfu okkur bækur og spil í jólagjöf.","sentence_bad":"Þau gáfu bækur og spil okkur í jólagjöf.","category":"word_order_general"}
+{"pairID":5,"sentence_good":"Við sáum þau ekki í garðinum.","sentence_bad":"Við ekki sáum þau í garðinum.","category":"word_order_general"}
+{"pairID":6,"sentence_good":"Sagðistu hafa viljað hitta þau í gær?","sentence_bad":"Sagðistu hitta viljað hafa þau í gær?","category":"word_order_general"}
+{"pairID":7,"sentence_good":"Ég er viss um að hún veldur starfinu betur en hann.","sentence_bad":"Ég er viss um að veldur hún starfinu betur en hann.","category":"word_order_general"}
+{"pairID":8,"sentence_good":"Sigríði finnst leiðinlegt að horfa á fótbolta.","sentence_bad":"Sigríður finnst leiðinlegt að horfa á fótbolta.","category":"subject_case"}
+{"pairID":9,"sentence_good":"Mig vantar helst spýtu og sög til að geta byrjað.","sentence_bad":"Ég vantar helst spýtu og sög til að geta byrjað.","category":"subject_case"}
+{"pairID":10,"sentence_good":"Þeim líður alltaf vel þegar þau komast í bústaðinn.","sentence_bad":"Þau líður alltaf vel þegar þau komast í bústaðinn.","category":"subject_case"}
+{"pairID":11,"sentence_good":"Nemandanum var hjálpað í prófinu.","sentence_bad":"Nemandinn var hjálpaður í prófinu.","category":"subject_case"}
+{"pairID":12,"sentence_good":"Maríu vanhagar ekki um neitt í íbúðinni.","sentence_bad":"María vanhagar ekki um neitt í íbúðinni.","category":"subject_case"}
+{"pairID":13,"sentence_good":"Börnunum gremst að fá ekki að fara út að leika.","sentence_bad":"Börnin gremst að fá ekki að fara út að leika.","category":"subject_case"}
+{"pairID":14,"sentence_good":"Alexander Daníel langar oft í bíó um helgar.","sentence_bad":"Alexanders Daníels langar oft í bíó um helgar.","category":"subject_case"}
+{"pairID":15,"sentence_good":"Ég hef aldrei heyrt annað eins.","sentence_bad":"Ég hefur aldrei heyrt annað eins.","category":"verb_agreement"}
+{"pairID":16,"sentence_good":"Af hverju fórst þú ekki heim?","sentence_bad":"Af hverju fór þú ekki heim?","category":"verb_agreement"}
+{"pairID":17,"sentence_good":"Fjölskyldan er í fríi um þessar mundir.","sentence_bad":"Fjölskyldan eruð í fríi um þessar mundir.","category":"verb_agreement"}
+{"pairID":18,"sentence_good":"Söngst þú ekki þetta lag í gær?","sentence_bad":"Söng þú ekki þetta lag í gær?","category":"verb_agreement"}
+{"pairID":19,"sentence_good":"Við berum út póst um helgar.","sentence_bad":"Við berið út póst um helgar.","category":"verb_agreement"}
+{"pairID":20,"sentence_good":"Borðið þið nú matinn ykkar.","sentence_bad":"Borða þið nú matinn ykkar.","category":"verb_agreement"}
+{"pairID":21,"sentence_good":"Klukkan var orðin margt þegar þau komu heim.","sentence_bad":"Klukkan var orðin margt þegar þau komum heim.","category":"verb_agreement"}
+{"pairID":22,"sentence_good":"Þessar kvikmyndir eru mjög skemmtilegar.","sentence_bad":"Þessar kvikmyndir eru mjög skemmtileg.","category":"predicate_agreement"}
+{"pairID":23,"sentence_good":"Þetta bananabrauð er rosalega gott.","sentence_bad":"Þetta bananabrauð er rosalega góð.","category":"predicate_agreement"}
+{"pairID":24,"sentence_good":"Ísskápurinn minn var troðfullur af mat.","sentence_bad":"Ísskápurinn minn var troðfullt af mat.","category":"predicate_agreement"}
+{"pairID":25,"sentence_good":"Veðrið var alveg frábært í gær.","sentence_bad":"Veðrið var alveg frábær í gær.","category":"predicate_agreement"}
+{"pairID":26,"sentence_good":"Mælitækin sem notuð voru í tilrauninni voru ónýt.","sentence_bad":"Mælitækin sem notuð voru í tilrauninni voru ónýtar.","category":"predicate_agreement"}
+{"pairID":27,"sentence_good":"Skattarnir hafa verið mjög háir að undanförnu.","sentence_bad":"Skattarnir hafa verið mjög há að undanförnu.","category":"predicate_agreement"}
+{"pairID":28,"sentence_good":"Taflan sem átti að hengja upp í stofunni var brotin.","sentence_bad":"Taflan sem átti að hengja upp í stofunni var brotnir.","category":"predicate_agreement"}
+{"pairID":29,"sentence_good":"María er góður bílstjóri.","sentence_bad":"María er góð bílstjóri.","category":"gender_np_agreement"}
+{"pairID":30,"sentence_good":"Sigrún er hræðilegur kokkur.","sentence_bad":"Sigrún er hræðileg kokkur.","category":"gender_np_agreement"}
+{"pairID":31,"sentence_good":"Elísabet er gamall prófessor.","sentence_bad":"Elísabet er gömul prófessor.","category":"gender_np_agreement"}
+{"pairID":32,"sentence_good":"Björk er íslenskur rithöfundur.","sentence_bad":"Björk er íslensk rithöfundur.","category":"gender_np_agreement"}
+{"pairID":33,"sentence_good":"Hallgerður er latur nemandi.","sentence_bad":"Hallgerður er löt nemandi.","category":"gender_np_agreement"}
+{"pairID":34,"sentence_good":"Brynhildur er ungur forseti.","sentence_bad":"Brynhildur er ung forseti.","category":"gender_np_agreement"}
+{"pairID":35,"sentence_good":"Þuríður er nýr forritari.","sentence_bad":"Þuríður er ný forritari.","category":"gender_np_agreement"}
+{"pairID":36,"sentence_good":"Magnea er vinsæll prestur.","sentence_bad":"Magnea er vinsæl prestur.","category":"gender_np_agreement"}
+{"pairID":37,"sentence_good":"Júlía er frægur geimfari.","sentence_bad":"Júlía er fræg geimfari.","category":"gender_np_agreement"}
+{"pairID":38,"sentence_good":"Heiða er fyndinn grínisti.","sentence_bad":"Heiða er fyndin grínisti.","category":"gender_np_agreement"}
+{"pairID":39,"sentence_good":"Vilhjálmur er vinsæl stjarna.","sentence_bad":"Vilhjálmur er vinsæll stjarna.","category":"gender_np_agreement"}
+{"pairID":40,"sentence_good":"Aron er hávaxin hetja.","sentence_bad":"Aron er hávaxinn hetja.","category":"gender_np_agreement"}
+{"pairID":41,"sentence_good":"Egill er góð viðbót við hópinn.","sentence_bad":"Egill er góður viðbót við hópinn.","category":"gender_np_agreement"}
+{"pairID":42,"sentence_good":"Jón er hættuleg leyniskytta.","sentence_bad":"Jón er hættulegur leyniskytta.","category":"gender_np_agreement"}
+{"pairID":43,"sentence_good":"Jóhanna er gott skáld.","sentence_bad":"Jóhanna er góð skáld.","category":"gender_np_agreement"}
+{"pairID":44,"sentence_good":"Valdimar er gott skáld.","sentence_bad":"Valdimar er góður skáld.","category":"gender_np_agreement"}
+{"pairID":45,"sentence_good":"Þorbjörg er gott barn.","sentence_bad":"Þorbjörg er góð barn.","category":"gender_np_agreement"}
+{"pairID":46,"sentence_good":"Þórarinn er gott barn.","sentence_bad":"Þórarinn er góður barn.","category":"gender_np_agreement"}
+{"pairID":47,"sentence_good":"Þórdís er trúverðugt vitni.","sentence_bad":"Þórdís er trúverðug vitni.","category":"gender_np_agreement"}
+{"pairID":48,"sentence_good":"Björn er trúverðugt vitni.","sentence_bad":"Björn er trúverðugur vitni.","category":"gender_np_agreement"}
+{"pairID":49,"sentence_good":"Guðrún er saklaust fórnarlamb.","sentence_bad":"Guðrún er saklaus fórnarlamb.","category":"gender_np_agreement"}
+{"pairID":50,"sentence_good":"Kristján er saklaust fórnarlamb.","sentence_bad":"Kristján er saklaus fórnarlamb.","category":"gender_np_agreement"}
+{"pairID":51,"sentence_good":"Hvern sagðist þú hafa hitt í gær?","sentence_bad":"Hverjum sagðist þú hafa hitt í gær?","category":"wh_movement_case"}
+{"pairID":52,"sentence_good":"Hver sögðu þau að kæmi á eftir?","sentence_bad":"Hvern sögðu þau að kæmi á eftir?","category":"wh_movement_case"}
+{"pairID":53,"sentence_good":"Hver sagðirðu að hefði stolið kökunni úr krúsinni í gær?","sentence_bad":"Hvern sagðirðu að hefði stolið kökunni úr krúsinni í gær?","category":"wh_movement_case"}
+{"pairID":54,"sentence_good":"Hvern sagðir þú hafa keyrt bílinn í gær?","sentence_bad":"Hverjum sagðir þú hafa keyrt bílinn í gær?","category":"wh_movement_case"}
+{"pairID":55,"sentence_good":"Hverjum taldir þú rétt að gefa hærri laun?","sentence_bad":"Hvern taldir þú rétt að gefa hærri laun?","category":"wh_movement_case"}
+{"pairID":56,"sentence_good":"Þessa bók gætir þú lesið.","sentence_bad":"Þessari bók gætir þú lesið.","category":"topicalization_case"}
+{"pairID":57,"sentence_good":"Hennar sakna ég mjög mikið.","sentence_bad":"Hana sakna ég mjög mikið.","category":"topicalization_case"}
+{"pairID":58,"sentence_good":"Þennan mann vildi ég gjarnan hitta.","sentence_bad":"Þessum manni vildi ég gjarnan hitta.","category":"topicalization_case"}
+{"pairID":59,"sentence_good":"Rauðan lit væri fallegast að hafa á veggnum.","sentence_bad":"Rauðum lit væri fallegast að hafa á veggnum.","category":"topicalization_case"}
+{"pairID":60,"sentence_good":"Ýmislegt annað má finna hér á safninu.","sentence_bad":"Ýmislegs annars má finna hér á safninu.","category":"topicalization_case"}
+{"pairID":61,"sentence_good":"Þessa barns verður að gæta vel.","sentence_bad":"Þetta barn verður að gæta vel.","category":"topicalization_case"}
+{"pairID":62,"sentence_good":"Þessa konu verður þú að tala við.","sentence_bad":"Þessarar konu verður þú að tala við.","category":"topicalization_case"}
+{"pairID":63,"sentence_good":"Ósaltað smjör er best að nota í eggjakökur.","sentence_bad":"Ósöltuðu smjöri er best að nota í eggjakökur.","category":"topicalization_case"}
+{"pairID":64,"sentence_good":"Hún heldur að ég hafi mismælt sig.","sentence_bad":"Hún heldur að ég hafi mismælt mig.","category":"reflexivization"}
+{"pairID":65,"sentence_good":"Hún heldur að ég hafi montað sig heldur mikið.","sentence_bad":"Hún heldur að ég hafi montað mig heldur mikið.","category":"reflexivization"}
+{"pairID":66,"sentence_good":"Hún vonar að ég skammist sín.","sentence_bad":"Hún vonar að ég skammist mín.","category":"reflexivization"}
+{"pairID":67,"sentence_good":"Hún vonar að ég flýti sér.","sentence_bad":"Hún vonar að ég flýti mér.","category":"reflexivization"}
+{"pairID":68,"sentence_good":"Hún vonar að ég ræski sig ekki á óheppilegum tíma.","sentence_bad":"Hún vonar að ég ræski mig ekki á óheppilegum tíma.","category":"reflexivization"}
