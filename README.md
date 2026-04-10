@@ -38,7 +38,10 @@ For translation from English to Icelandic, we include sentences that test 1) gen
 These tasks are not meant as machine translation test sets but can serve as an indicator of a model's NLU performance and grammatical capabilities in producing Icelandic text. The output needs to be manually examined, however, as we do not include scripts for automatic evaluation, and these tasks are therefore kept separate from the tasks in `ice_benchmark_set.jsonl`.
 
 ## Data format
-The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-bench harness](https://github.com/google/BIG-bench) and one for [OpenAI Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. The custom type has the following elements:
+
+The benchmark is published in JSONL-files, where each line is a JSON object, and the data is in three different formats: one custom, one for the [BIG-bench harness](https://github.com/google/BIG-bench) and one for [OpenAI Evals](https://github.com/openai/evals). Note that the translation tasks in `translation_tasks.jsonl` are not included in the harness data. Additionally, a subset of those tasks in the benchmark which lend themselves to minimal pair judgments (commonly used to evaluate smaller, open-source language models, see e.g. [Auxiliary task demands mask the capabilities of smaller language models](https://openreview.net/pdf?id=U5BUzSn4tD) (Hu and Frank 2024)) are available in a [BLiMP-style](https://github.com/alexwarstadt/blimp) format in the `minimal_pair_format` directory.
+
+The custom type has the following elements:
 
 - "id": id of the sentence, word etc. Contains a keyword for each category, e.g. `islands_1a`.
 - "input": the sentence, word etc. embedded in a prompt with instructions for the task at hand.
@@ -49,5 +52,11 @@ The BIG-bench format has the following elements:
 - "target": the answer.
 
 The OpenAI Evals format has the following elements:
-- "input": a list with a single dict for each task (we omit the system prompt). 
+- "input": a list with a single dict for each task (we omit the system prompt).
 - "ideal": the answer.
+
+The minimal pair format has the following elements:
+- "pairID": id of the sentence pair.
+- "sentence_good": the grammatical version of the sentence.
+- "sentence_bad": the ungrammatical version of the sentence.
+- "category": the category of the benchmark to which the minimal pair belongs, e.g. `predicate_agreement`.
